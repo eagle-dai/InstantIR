@@ -247,4 +247,10 @@ with gr.Blocks() as demo:
     ```
     """)
 
+# remove environment variable HTTP(S)_PROXY
+if "HTTPS_PROXY" in os.environ:
+    del os.environ["HTTPS_PROXY"]
+if "HTTP_PROXY" in os.environ:
+    del os.environ["HTTP_PROXY"]
+
 demo.queue().launch()
