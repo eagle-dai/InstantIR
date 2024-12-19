@@ -38,3 +38,6 @@ cd <current directory>
 INSTANTIR_PATH=./model/InstantX/InstantIR/models python gradio_demo/app.py
 ```
 Launch via your browser at http://localhost:7860
+
+## TODO
+- [ ] Enable to run on GPU
